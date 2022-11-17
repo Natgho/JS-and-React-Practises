@@ -9,4 +9,5 @@ npm install
 npm start
 npm run callback
 npm run fetcher
+npm run axios
 ```
