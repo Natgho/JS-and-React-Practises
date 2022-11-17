@@ -5,11 +5,15 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "callbacks": "node callback",
+    "fetcher": "node fetch-practise",
+    "async-await": "node async-await-practise"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "node-fetch": "^3.3.0",
     "slugify": "^1.6.5"
   }
 }
