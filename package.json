@@ -9,7 +9,9 @@
     "callbacks": "node callback",
     "fetcher": "node fetch-practise",
     "async-await": "node async-await-practise",
-    "axios": "node axios-practise"
+    "axios": "node axios-practise",
+    "promises": "node promises",
+    "array-functions": "node array-functions"
   },
   "author": "",
   "license": "ISC",
