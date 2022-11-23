@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header'
+import VariableUsing from "./components/VariableUsing";
+import Practises from "./components/ComponentPractises";
+
+const name = "Sezer"
+const surname = "Bozkir"
+const loggedIn = true
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <Practises/>
+            <p>{ loggedIn && `Hello ${name} ${surname}, welcome on board!`}</p>
+            <p>{ !loggedIn && "Hello anonymous user!"}</p>
+            <p> {loggedIn ? `Hello ${name} ${surname}, welcome on board!` : "Hello anonymous user!"}</p>
+
+        </div>
+    )
 }
 
 export default App;
