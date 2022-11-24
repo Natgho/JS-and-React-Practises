@@ -1,5 +1,6 @@
 import UserwithProps from "./components/UserwithProps";
 import UserWithParameterizedProps from "./components/UserWithParameterizedProps";
+import UserWithPropTypes from "./components/PropTypesPractises";
 
 const friends = [
     {
@@ -15,10 +16,17 @@ const friends = [
 function App() {
     return (
         <div>
-            <UserwithProps name={"Sezer"} surname={"Bozkir"} isLoggedIn={true}/>
-            <UserwithProps name={"Sezer"} surname={"Bozkir"} isLoggedIn={false}/>
-            <UserWithParameterizedProps name={"Sezer"} surname={"Bozkir"} isLoggedIn={true} friends={friends}/>
-            <UserWithParameterizedProps name={"Sezer"} surname={"Bozkir"} isLoggedIn={false} friends={friends}/>
+            <UserWithPropTypes name={"sezer"}
+                               surname={"Bozkir"}
+                               age={20}
+                               address={
+                                   {
+                                       title: "istanbul",
+                                       zipcode: 34000
+                                   }
+                               }
+                               isLoggedIn={true}
+                               friends={friends}/>
         </div>
     )
 }
