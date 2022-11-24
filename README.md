@@ -16,7 +16,13 @@ npm run array-functions
 
 # React Project Details
 ## How to run
+### First App
 ```shell
 cd first-app
+npm start
+```
+### State App
+```shell
+cd state-app
 npm start
 ```
