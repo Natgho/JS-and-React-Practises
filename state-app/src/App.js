@@ -1,11 +1,14 @@
 import './App.css';
-import FormPrototype from "./components/FormPrototype";
+import UserWithUseEffect from "./components/UserWithuseEffect";
+import React, {useEffect, useState} from "react";
 
 function App() {
+    const [isVisible, setIsVisible] = useState(true)
 
     return (
         <div className="App">
-            <FormPrototype/>
+            { isVisible && <UserWithUseEffect/>}
+            <button onClick={()=> setIsVisible(!isVisible)}>Timer Destroyer</button>
         </div>
     );
 }
