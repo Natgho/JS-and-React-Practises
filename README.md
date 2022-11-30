@@ -18,7 +18,7 @@ npm run array-functions
 ## How to run
 ### First App
 ```shell
-cd first-app
+cd fundamentals-app
 npm start
 ```
 ### State App
