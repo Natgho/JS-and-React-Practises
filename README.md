@@ -31,3 +31,10 @@ npm start
 cd contacts-app
 npm start
 ```
+
+### Styles APp
+### Contacts App
+```shell
+cd styles-app
+npm start
+```
