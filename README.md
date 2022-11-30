@@ -26,3 +26,8 @@ npm start
 cd state-app
 npm start
 ```
+### Contacts App
+```shell
+cd contacts-app
+npm start
+```
