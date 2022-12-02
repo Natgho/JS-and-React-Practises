@@ -14,7 +14,7 @@ npm run promises
 npm run array-functions
 ```
 
-# React Project Details
+# React Projects Details
 ## How to run
 ### First App
 ```shell
@@ -32,9 +32,14 @@ cd contacts-app
 npm start
 ```
 
-### Styles APp
-### Contacts App
+### Styles App
 ```shell
 cd styles-app
+npm start
+```
+
+### Rest API Sample App
+```shell
+cd data-from-rest-app
 npm start
 ```
