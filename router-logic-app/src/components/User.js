@@ -19,7 +19,7 @@ function User() {
                     <pre>{JSON.stringify(user, null, 2)}</pre>
                 </div>
             }
-            <Link to={`/user/${parseInt(userid)+1}`}>Next User ({parseInt(userid) + 1})</Link>
+            <Link to={`/user/${parseInt(userid) + 1}`}>Next User ({parseInt(userid) + 1})</Link>
         </div>
     );
 }

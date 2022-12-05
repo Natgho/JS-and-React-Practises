@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Users from "./components/Users";
 import Clients from "./components/Clients";
 import User from "./components/User";
+import Error404 from "./components/Error404";
 
 function App() {
     return (
@@ -19,9 +20,12 @@ function App() {
             </div>
             <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route path="/users" element={<Users/>}/>
+                <Route path="/users/" element={<Users/>}>
+                    <Route path=":userid" element={<User/>}/>
+                </Route>
                 <Route path="/user/:userid" element={<User/>}/>
                 <Route path="/clients" element={<Clients/>}/>
+                <Route path='*' element={<Error404/>}/>
             </Routes>
         </div>
     );
