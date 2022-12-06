@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Field, useFormik} from "formik";
+import {useFormik} from "formik";
 
 function App() {
     const formik = useFormik(
