@@ -61,3 +61,9 @@ npm start
 cd form-validation-app
 npm start
 ```
+
+### Memoization sample app
+```shell
+cd memoization-app
+npm start
+```
