@@ -1,14 +1,17 @@
-import React, {useContext} from 'react';
+import React from 'react';
 
 import './style.modules.css'
-import ThemeContext from "../../context/ThemeContext";
+import {useTheme} from "../../context/ThemeContext";
 import Button from "../Button";
+import Profile from "../Profile";
 
-function Container(props) {
-    const {theme} = useContext(ThemeContext)
+function Container() {
+    const {theme} = useTheme()
     return (
         <div className={`${theme}`}>
             <Button/>
+            <hr/>
+            <Profile/>
         </div>
     );
 }
